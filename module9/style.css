@@ -1,0 +1,14 @@
+/* CSS Document */
+section {
+	margin: 2em;
+	padding: 2em;
+	border: 1em solid red;
+	width: 30em;
+	background-color: lightblue;
+}
+.content-box {
+	box-sizing: content-box;
+}
+.border-box {
+	box-sizing: border-box;
+}
