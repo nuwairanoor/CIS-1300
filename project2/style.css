@@ -18,7 +18,7 @@ body {
 		"right"
 		"footer";
 	min-height: 100vh;
-	background-color: #d86499;
+	background-color: lightgrey;
 	margin: 0;
 	padding: 0;
 }
@@ -29,12 +29,12 @@ main p {
 header {
   grid-area: header;
   padding: 1em;
-  background-color: #d86499;
+  background-color: lightgreen;
 }
 aside:first-of-type {
   	grid-area: left;
   	padding: 1em;
-	background-color: rosybrown;
+	background-color: lightpink;
 }
 main {
   grid-area: main;
