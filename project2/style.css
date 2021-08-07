@@ -29,7 +29,7 @@ main p {
 header {
   grid-area: header;
   padding: 1em;
-  background-color: lightgreen;
+  background-color: #d86499;
 }
 aside:first-of-type {
   	grid-area: left;
