@@ -18,7 +18,9 @@ body {
 		"right"
 		"footer";
 	min-height: 100vh;
-	background-color: LightSteelBlue;
+	p {
+  color: #ff00ff;
+}
 	margin: 0;
 	padding: 0;
 }
