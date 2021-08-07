@@ -1,46 +1,101 @@
-@charset "utf-8";
+
+/* Styles for Project 02 */
 html {
-  box-sizing: border-box;
+ box-sizing: border-box;
 }
 *, *:before, *:after {
-  box-sizing: inherit;
-  overflow: auto;
+ box-sizing: inherit;
 }
 body {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: auto 1fr auto;
-  grid-template-areas:
-    "header header header"
-    "left main right"
-    "footer footer footer";
-	
-  min-height: 100vh;
-  background-color: grey;
-  margin: 0;
-  padding: 0;
+	max-width: 576px;
+  	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: 1fr;
+	grid-template-areas:
+		"header"
+		"left"
+		"main"
+		"right"
+		"footer";
+	min-height: 100vh;
+	background-color: lightgrey;
+	margin: 0;
+	padding: 0;
 }
+main p {
+	/*visibility: hidden;*/
+}
+
 header {
   grid-area: header;
   padding: 1em;
-  background-color: green;
+  background-color: lightgreen;
 }
 aside:first-of-type {
-  grid-area: left;
-  padding: 1em;
-  background-color: grey;
+  	grid-area: left;
+  	padding: 1em;
+	background-color: rosybrown;
 }
 main {
   grid-area: main;
   padding: 1em;
-  background-color: saddlebrown;
+  background-color: skyblue;
 }
 aside:last-of-type {
-  grid-area: right;
-  padding: 1em;
+	display: flex;
+	flex-wrap: wrap; 
+	grid-area: right;
+  	padding: 1em;
+	background-color: wheat;
+	vertical-align: top;
 }
 footer {
-  grid-area: footer;
-  padding: 1em;
-  background-color: green;
+	grid-area: footer;
+	padding: 5px;
+	background-color: lightgreen;
+	max-height: 100px;
+	text-align: center;	
+}
+img {
+	object-fit:cover;
+	position: relative;
+	width: 150px;
+	height: 150px;
+	padding: 5px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+/* check for medium display */
+@media screen and (min-width:576px) and (max-width:991px) {
+	body {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto 1fr;
+		grid-template-areas:
+		"header header"
+		"left right"
+		"main main"
+		"footer footer";
+		
+		min-height: 100vh;
+		max-width: 100%;
+	}
+} 
+
+/* check for larger screen sizes */
+@media screen and (min-width:992px) {
+	body {
+		max-width: 100%;
+		display: grid;
+		grid-template-columns: 1fr 2fr 1fr;
+		grid-template-rows: auto 1fr auto;
+		grid-template-areas:
+		"header header header"
+		"left main right"
+		"footer footer footer";
+		min-height: 100vh;
+	}
 }
