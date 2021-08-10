@@ -26,7 +26,7 @@ body {
 header {
   grid-area: header;
   padding: 1em;
-  background-color: lightgreen;
+  background-color: DeepPink;
 }
 aside:first-of-type {
   	grid-area: left;
@@ -49,7 +49,7 @@ aside:last-of-type {
 footer {
 	grid-area: footer;
 	padding: 5px;
-	background-color: lightgreen;
+	background-color: DeepPink;
 	text-align: center;	
 }
 img {
